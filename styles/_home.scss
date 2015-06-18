@@ -1,0 +1,23 @@
+.homeSec {
+	
+	background-size: cover;
+	background-attachment: fixed;
+	// background: $backgroundGrey;
+	// background: rgba(34, 34, 34, 0.9);
+	height: 100vh;
+}
+
+.content.section.homeSec {
+	padding: 150px 0 0 40px;
+}
+
+.welcomeMessage {
+	width: 50%;
+}
+
+.welcomeMessageRight {
+	width: 100%;
+	text-align: right;
+	color: white;
+	padding-right: 40px;
+}

@@ -1,0 +1,544 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 1024px) {
+	.content.section.homeSec {
+		padding: 40px 0 0 40px;
+	}
+
+	.welcomeMessage h1 {
+		font-size: 110px;
+	}
+
+	.aboutContainer {
+		width: 95%;
+	}
+
+	.aboutOtherImage {
+		width: 85%;
+		float: left;
+	}
+
+	.portfolioContainer {
+		position: relative;
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+		background-position: 120% 90%;
+		height: 115vh;
+		padding: 25px;
+	}
+
+	.portfolioPieceLeft {
+		position: absolute;
+		top: 20;
+		width: 75%;
+		padding: 20px;
+		background: rgba(255, 255, 255, 0.8);
+		h4 {
+			margin: 6px 0 6px 0;
+		}
+		.techUsed, .portfolioPieceDesc, .portfolioPieceLink {
+			font-size: 12px;
+		}
+		// .portfolioPieceLink {
+		// 	padding-bottom: 5px;
+		// }
+		
+	}
+
+	.hireHeading, .contactInfoTop {
+		width: 60%;
+	}
+
+	.contactNumberandEmail {
+		width: 70%;
+	}
+
+
+
+
+
+	.hireRightUpper {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 940px) {
+
+	header {
+		// padding-top: 10px;
+		width: 100%;
+		height: 87px;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-align-content: center;
+		    -ms-flex-line-pack: center;
+		        align-content: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		.navLogo {
+			height: 50px;
+			display: flex;
+			margin: 0 auto;
+			// flex: 1 0 20%;
+			.logo {
+				// padding: 20px;
+				letter-spacing: 0;
+				text-transform: uppercase;
+				font-size: 15px;
+			}
+		}
+		.navMain {
+			padding-top: 10px;
+			-webkit-box-flex: 1;
+					-webkit-flex: 1 0 20%;
+					    -ms-flex: 1 0 20%;
+					        flex: 1 0 20%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: row;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				-webkit-justify-content: space-around;
+				    -ms-flex-pack: distribute;
+				        justify-content: space-around;
+			a {
+				&:hover {
+					background: none;
+				}
+			}
+			ul li {
+				background: none;
+				&:hover {
+					background: none;
+					a {
+						background: none;
+						&:hover {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// .navMain ul li {
+	// 	background: none;
+	// 	&:hover {
+	// 		background: none;
+	// 	}
+	// }
+
+	.navContainer {
+		width: 95%;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-align-content: center;
+		    -ms-flex-line-pack: center;
+		        align-content: center;
+		// justify-content: center;
+	}
+
+	.tabletSocialLinks {
+		// display: inline-block;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		// padding-top: 15px;
+	}
+
+	.navSocial {
+		display: none;
+	}
+
+	.navMain ul {
+		text-align: center;
+		li {
+		display: inline-block;
+		padding: 10px;
+		&:hover {
+			// background: white;
+		}
+			a {
+				// padding: 10px 25px 10px 25px;
+				&:hover {
+					background: $backgroundColor;
+					color: $highlightColor;
+				}
+			}
+		}
+	}
+
+	.main {
+		margin-left: 0;
+		margin-top: 87px;
+	}
+	
+	.portfolioContainer {
+		background-attachment: scroll;
+		padding: 45px 25px 145px 25px;
+		height: 135vh;
+		.portfolioPieceLeft {
+			width: 55%;
+		}
+	}
+
+	.nameAbout {
+		width: 130%;
+	}
+
+	.aboutRightBottom {
+		display: none;
+	}
+
+	.hireRightUpper {
+		padding-top: 100px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 788px) {
+	
+	header {
+		height: 117px;
+		border-right: none;
+		border-bottom: 1px solid $lightGrey;
+	}
+
+	.navContainer {
+		padding-top: 20px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		width: 100%;
+		.navMain {
+			width: 90%;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			ul li {
+				padding: 0;
+				background: none;
+				a {
+					padding: 5px;
+				}
+			}
+		}
+	}
+
+	.welcomeMessage {
+		width: 60%;
+		padding: 40px 0 40px 40px;
+		h1 {
+				font-size: 60px;
+				line-height: 60px;
+				// padding: 20px;
+			}
+	}
+
+	.welcomeMessageRight h1 {
+		font-size: 50px;
+		line-height: 40px;
+		padding: 10px 30px;
+	}
+
+	.aboutContainer {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		.aboutLeft, .aboutRight {
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			    -ms-flex: 1;
+			        flex: 1;
+			padding: 0 40px 0 40px;
+		}
+		.aboutLeft {
+			// padding: 0 40px 0 40px;
+			.passions {
+				display: none;
+			}
+		}
+		.aboutBlurb {
+			// text-align: center;
+		}
+	}
+
+	// .hireContainer {
+	// 	flex-direction: column;
+	// 	.hireLeft, .hireRight {
+	// 		width: 100%;
+	// 	}
+	// }
+	.hireLeft {
+		display: none;
+	}
+
+	.hireRight {
+		width: 100%;
+		.contactNumberandEmail {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+						-webkit-box-orient: vertical;
+						-webkit-box-direction: normal;
+						-webkit-flex-direction: column;
+						    -ms-flex-direction: column;
+						        flex-direction: column;
+			a {
+				&:hover {
+					padding-left: 45px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 667px) {
+	
+	.portfolioContainer {
+		height: 90vh;
+		.portfolioPieceDesc {
+			display: none;
+		}
+		.portfolioPieceLeft {
+			width: 90%;
+			text-align: center;
+			margin: 0 auto;
+			.techUsed {
+				margin-bottom: 20px;
+			}
+		}
+		.portfolioPieceLink {
+			margin-top: 20px;
+		}
+	}
+
+	.portfolioPieceLeft {
+		position: relative;
+		height: 150px;
+		background: none;
+	}
+
+	.portfolioPieceLeft .portfolioPieceLink {
+		display: block;
+	}
+
+	.portfolioContainer .portfolioPieceLeft .techUsed {
+		margin-bottom: 2px;
+	}
+}
+
+@media (max-width: 575px) {
+	
+	.hire .sectionHeader {
+		padding: 40px;
+	}
+
+	.hireContainer {
+		padding-top: 30px;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 495px) {
+	
+	.navContainer {
+		-webkit-box-orient: horizontal;
+		  -webkit-box-direction: normal;
+		  -webkit-flex-direction: row;
+		      -ms-flex-direction: row;
+		          flex-direction: row;
+		padding: 10px;
+		.navMain {
+			// display: none;
+		}
+	}
+
+	header .navMain {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.tabletSocialLinks {
+		margin: 0 auto;
+	}
+
+	.portfolioContainer {
+		background-position: 120% 90%;
+		height: 70vh;
+	}
+
+
+	.navMain ul {
+		// display: none;
+	}
+	
+
+}
+
+
+@media (max-width: 490px) {
+
+	header {
+		height: 400;
+	}
+
+	.navContainer {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.navMain ul {
+		// display: none;
+	}
+
+	.socialContainer, .tabletSocialLinks {
+		display: none;
+	}
+
+	.navMain ul li {
+		padding: 0;
+		&:hover {
+			background: none;
+		}
+	}
+
+	.content.section.homeSec {
+		padding: 40px;
+	}
+
+	.welcomeMessage {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.welcomeMessageRight h1 {
+		padding: 10px;
+		font-size: 35px;
+	}
+
+	.sectionHeader h2 {
+		font-size: 45px;
+		text-align: center;
+	}
+
+	.sectionHeader h3 {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.about .sectionHeader {
+		padding: 40px 40px 110px 40px;
+	}
+
+	.nameAbout {
+		width: 100%;
+		font-size: 40px;
+		line-height: 40px;
+		margin-left: 0;
+		margin-top: 25px;
+		text-align: center;
+	}
+
+	.aboutContainer .aboutLeft, .aboutContainer .aboutRight {
+
+		padding: 20px;
+
+	}
+
+	.portfolioContainer {
+		height: 80vh;
+	}
+
+	.portfolioContainer .portfolioPieceLeft .techUsed {
+		margin-bottom: 5px;
+	}
+
+	.portfolioPieceLeft .portfolioPieceLink {
+		display: block;
+	}
+
+	.hireContainer {
+		padding-top: 0;
+	}
+
+	.hireRightUpper {
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	.hireHeading {
+		padding-bottom: 10px;
+	}
+
+	.hireHeading, .contactInfoTop, .contactNumberandEmail {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+}
+
+@media (max-width: 320px) {
+
+	header {
+		height: 150px;
+		.navContainer {
+			flex-direction: row;
+			.navMain {
+				padding-top: 0;
+			}
+		}
+	}
+
+	.navMain ul {
+		margin: 0;
+		li {
+			display: block;
+		}
+	}
+
+	label {
+		display: block;
+	}
+
+	.portfolioContainer {
+		height: 120vh;
+	}
+
+}
